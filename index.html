@@ -3,106 +3,18 @@
         <meta content="text/html" charset="utf8" http-equiv="content-type">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <title>Geo</title>
-        <script src='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.js'></script>
-<link href='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
-
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+         <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div class="main">
-            <div class="menuScreen">
-                <div id="authorMap" class="placeHolder">
-                    <h1>Выберите писателя</h1>
-                </div>
-                <div class="authorMap" class="Gogol">
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q';
-                        var map = new mapboxgl.Map({
-                            container: 'authorMap',
-                            style: 'mapbox://styles/rolanlive/cj0cq6u9a00bj2sqpvwpt0lwl'
-                        });
-                    </script>
-                </div>
-
-                <div id="authorMap" class="Goncharov">
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q';
-                        var map = new mapboxgl.Map({
-                            container: 'authorMap',
-                            style: 'mapbox://styles/rolanlive/cj0cq6u9a00bj2sqpvwpt0lwl'
-                        });
-                    </script>
-                </div>
-
-                <div id="authorMap" class="Dostoevski">
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q';
-                        var map = new mapboxgl.Map({
-                            container: 'authorMap',
-                            style: 'mapbox://styles/rolanlive/cj0cowwrv00ao2smtryr6xu5m'
-                        });
-                    </script>
-                </div>
-
-                <div id="authorMap" class="Karamzin">
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q';
-                        var map = new mapboxgl.Map({
-                            container: 'authorMap',
-                            style: 'mapbox://styles/rolanlive/cj0cpx56e00bi2sqp2t75ug4w'
-                        });
-                    </script>
-                </div>
-
-                <div id="authorMap" class="Kuprin">
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q';
-                        var map = new mapboxgl.Map({
-                            container: 'authorMap',
-                            style: 'mapbox://styles/rolanlive/cj0cq1mfr00au2smtbe9baylk'
-                        });
-                    </script>
-                </div>
-
-
-                <div id="authorMap" class="Lomonosov">
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q';
-                        var map = new mapboxgl.Map({
-                            container: 'authorMap',
-                            style: 'mapbox://styles/rolanlive/cj0cq9mff00bt2sqhnxt2ej7p'
-                        });
-                    </script>
-                </div>
-
-                <div id="authorMap" class="Tolstoy">
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q';
-                        var map = new mapboxgl.Map({
-                            container: 'authorMap',
-                            style: 'mapbox://styles/rolanlive/cj0cqckem00bu2sqh5yrqxy4r'
-                        });
-                    </script>
-                </div>
-
-                <div id="authorMap" class="Turgenev">
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q';
-                        var map = new mapboxgl.Map({
-                            container: 'authorMap',
-                            style: 'mapbox://styles/rolanlive/cj0cpuawu00bp2sqhzbjxspho'
-                        });
-                    </script>
-                </div>
-
-                <div id="authorMap" class="Tutchev">
-                    <script>
-                        mapboxgl.accessToken = 'pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q';
-                        var map = new mapboxgl.Map({
-                            container: 'authorMap',
-                            style: 'mapbox://styles/rolanlive/cj0cq4oyo00av2smtiqwh6u3w'
-                        });
-                    </script>
+                <div class="mapScreen">
+                    <div id="authorMap">
+                        <script>
+                            
+                        </script>
+                    </div>
                 </div>
                 <div class="menuOpened">
                     <div class="authorTab" id="GogolTab">
@@ -144,66 +56,65 @@
                     <img src="img/close.png" alt="" id="closeBar">
                     </div>
                 </div>
-            <div class="authorScreen">
-                <div class="authorDescr Kuprin">
+                <div class="authorScreen">
+                    <div class="authorDescr Kuprin">
                     <h1>Александр Иванович Куприн</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie maximus diam, quis rhoncus urna elementum et. Proin sed auctor nisl, vel lacinia quam. Aliquam mollis, magna vitae tempor pretium, magna mi consectetur metus, at tristique enim massa non ex. Aenean sed tortor dictum ex lobortis fringilla. Suspendisse ac erat porta, hendrerit quam sit amet, blandit diam. Aliquam in turpis consectetur, feugiat libero in, fringilla neque. Pellentesque eu magna semper, tempor metus in, aliquam dui. Ut tellus metus, sagittis a odio hendrerit, aliquam volutpat est. Aliquam quis dolor viverra, aliquet lectus sed, efficitur neque. Morbi tincidunt justo vel mi sollicitudin vestibulum. Etiam mattis velit risus, quis porttitor diam rhoncus a. Curabitur volutpat, erat ac iaculis malesuada, turpis arcu laoreet ligula, pretium interdum ante sapien nec arcu. Pellentesque porttitor quam non dictum volutpat. Praesent rutrum ipsum nec lectus commodo, id interdum turpis auctor. Integer eu neque at tellus tempor molestie.Cras cursus, ex a rutrum consectetur, metus tortor vulputate lacus, nec finibus enim odio vel ex. Maecenas lacinia rutrum nunc, sed auctor felis tristique vel. Nunc vel purus sed sapien sollicitudin rutrum vitae nec ligula. Aenean quis lorem turpis. Nulla tempor justo turpis, in hendrerit elit porta eget. Etiam tincidunt mi vel justo aliquam, vel pretium risus blandit. Quisque blandit maximus velit, varius dictum nisi auctor vitae. Nunc cursus diam mauris, ut convallis tellus pharetra ut. Etiam ac eros leo. Sed vel vehicula nisl. Integer vulputate, risus ac volutpat cursus, dolor nibh porta nisl, vitae posuere lectus massa ac lacus. Phasellus lobortis arcu justo, tincidunt dignissim velit laoreet efficitur. Aenean nec dolor eu ligula maximus consectetur. Fusce vestibulum elit vel lectus aliquet, venenatis volutpat erat ultrices. Sed id auctor odio.
                     </p>
-                </div>
-                <div class="authorDescr Gogol">
+                    </div>
+                    <div class="authorDescr Gogol">
                     <h1>Александр Иванович Карамзин7</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie maximus diam, quis rhoncus urna elementum et. Proin sed auctor nisl, vel lacinia quam. Aliquam mollis, magna vitae tempor pretium, magna mi consectetur metus, at tristique enim massa non ex. Aenean sed tortor dictum ex lobortis fringilla. Suspendisse ac erat porta, hendrerit quam sit amet, blandit diam. Aliquam in turpis consectetur, feugiat libero in, fringilla neque. Pellentesque eu magna semper, tempor metus in, aliquam dui. Ut tellus metus, sagittis a odio hendrerit, aliquam volutpat est. Aliquam quis dolor viverra, aliquet lectus sed, efficitur neque. Morbi tincidunt justo vel mi sollicitudin vestibulum. Etiam mattis velit risus, quis porttitor diam rhoncus a. Curabitur volutpat, erat ac iaculis malesuada, turpis arcu laoreet ligula, pretium interdum ante sapien nec arcu. Pellentesque porttitor quam non dictum volutpat. Praesent rutrum ipsum nec lectus commodo, id interdum turpis auctor. Integer eu neque at tellus tempor molestie.Cras cursus, ex a rutrum consectetur, metus tortor vulputate lacus, nec finibus enim odio vel ex. Maecenas lacinia rutrum nunc, sed auctor felis tristique vel. Nunc vel purus sed sapien sollicitudin rutrum vitae nec ligula. Aenean quis lorem turpis. Nulla tempor justo turpis, in hendrerit elit porta eget. Etiam tincidunt mi vel justo aliquam, vel pretium risus blandit. Quisque blandit maximus velit, varius dictum nisi auctor vitae. Nunc cursus diam mauris, ut convallis tellus pharetra ut. Etiam ac eros leo. Sed vel vehicula nisl. Integer vulputate, risus ac volutpat cursus, dolor nibh porta nisl, vitae posuere lectus massa ac lacus. Phasellus lobortis arcu justo, tincidunt dignissim velit laoreet efficitur. Aenean nec dolor eu ligula maximus consectetur. Fusce vestibulum elit vel lectus aliquet, venenatis volutpat erat ultrices. Sed id auctor odio.
                     </p>
-                </div>
-                <div class="authorDescr Goncharov">
+                    </div>
+                    <div class="authorDescr Goncharov">
                     <h1>Александр Иванович Карамзин1</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie maximus diam, quis rhoncus urna elementum et. Proin sed auctor nisl, vel lacinia quam. Aliquam mollis, magna vitae tempor pretium, magna mi consectetur metus, at tristique enim massa non ex. Aenean sed tortor dictum ex lobortis fringilla. Suspendisse ac erat porta, hendrerit quam sit amet, blandit diam. Aliquam in turpis consectetur, feugiat libero in, fringilla neque. Pellentesque eu magna semper, tempor metus in, aliquam dui. Ut tellus metus, sagittis a odio hendrerit, aliquam volutpat est. Aliquam quis dolor viverra, aliquet lectus sed, efficitur neque. Morbi tincidunt justo vel mi sollicitudin vestibulum. Etiam mattis velit risus, quis porttitor diam rhoncus a. Curabitur volutpat, erat ac iaculis malesuada, turpis arcu laoreet ligula, pretium interdum ante sapien nec arcu. Pellentesque porttitor quam non dictum volutpat. Praesent rutrum ipsum nec lectus commodo, id interdum turpis auctor. Integer eu neque at tellus tempor molestie.Cras cursus, ex a rutrum consectetur, metus tortor vulputate lacus, nec finibus enim odio vel ex. Maecenas lacinia rutrum nunc, sed auctor felis tristique vel. Nunc vel purus sed sapien sollicitudin rutrum vitae nec ligula. Aenean quis lorem turpis. Nulla tempor justo turpis, in hendrerit elit porta eget. Etiam tincidunt mi vel justo aliquam, vel pretium risus blandit. Quisque blandit maximus velit, varius dictum nisi auctor vitae. Nunc cursus diam mauris, ut convallis tellus pharetra ut. Etiam ac eros leo. Sed vel vehicula nisl. Integer vulputate, risus ac volutpat cursus, dolor nibh porta nisl, vitae posuere lectus massa ac lacus. Phasellus lobortis arcu justo, tincidunt dignissim velit laoreet efficitur. Aenean nec dolor eu ligula maximus consectetur. Fusce vestibulum elit vel lectus aliquet, venenatis volutpat erat ultrices. Sed id auctor odio.
                     </p>
-                </div>
-                <div class="authorDescr Dostoevski">
+                    </div>
+                    <div class="authorDescr Dostoevski">
                     <h1>Александр Иванович Карамзин2</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie maximus diam, quis rhoncus urna elementum et. Proin sed auctor nisl, vel lacinia quam. Aliquam mollis, magna vitae tempor pretium, magna mi consectetur metus, at tristique enim massa non ex. Aenean sed tortor dictum ex lobortis fringilla. Suspendisse ac erat porta, hendrerit quam sit amet, blandit diam. Aliquam in turpis consectetur, feugiat libero in, fringilla neque. Pellentesque eu magna semper, tempor metus in, aliquam dui. Ut tellus metus, sagittis a odio hendrerit, aliquam volutpat est. Aliquam quis dolor viverra, aliquet lectus sed, efficitur neque. Morbi tincidunt justo vel mi sollicitudin vestibulum. Etiam mattis velit risus, quis porttitor diam rhoncus a. Curabitur volutpat, erat ac iaculis malesuada, turpis arcu laoreet ligula, pretium interdum ante sapien nec arcu. Pellentesque porttitor quam non dictum volutpat. Praesent rutrum ipsum nec lectus commodo, id interdum turpis auctor. Integer eu neque at tellus tempor molestie.Cras cursus, ex a rutrum consectetur, metus tortor vulputate lacus, nec finibus enim odio vel ex. Maecenas lacinia rutrum nunc, sed auctor felis tristique vel. Nunc vel purus sed sapien sollicitudin rutrum vitae nec ligula. Aenean quis lorem turpis. Nulla tempor justo turpis, in hendrerit elit porta eget. Etiam tincidunt mi vel justo aliquam, vel pretium risus blandit. Quisque blandit maximus velit, varius dictum nisi auctor vitae. Nunc cursus diam mauris, ut convallis tellus pharetra ut. Etiam ac eros leo. Sed vel vehicula nisl. Integer vulputate, risus ac volutpat cursus, dolor nibh porta nisl, vitae posuere lectus massa ac lacus. Phasellus lobortis arcu justo, tincidunt dignissim velit laoreet efficitur. Aenean nec dolor eu ligula maximus consectetur. Fusce vestibulum elit vel lectus aliquet, venenatis volutpat erat ultrices. Sed id auctor odio.
                     </p>
-                </div>
-                <div class="authorDescr Karamzin">
+                    </div>
+                    <div class="authorDescr Karamzin">
                     <h1>Александр Иванович Карамзин3</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie maximus diam, quis rhoncus urna elementum et. Proin sed auctor nisl, vel lacinia quam. Aliquam mollis, magna vitae tempor pretium, magna mi consectetur metus, at tristique enim massa non ex. Aenean sed tortor dictum ex lobortis fringilla. Suspendisse ac erat porta, hendrerit quam sit amet, blandit diam. Aliquam in turpis consectetur, feugiat libero in, fringilla neque. Pellentesque eu magna semper, tempor metus in, aliquam dui. Ut tellus metus, sagittis a odio hendrerit, aliquam volutpat est. Aliquam quis dolor viverra, aliquet lectus sed, efficitur neque. Morbi tincidunt justo vel mi sollicitudin vestibulum. Etiam mattis velit risus, quis porttitor diam rhoncus a. Curabitur volutpat, erat ac iaculis malesuada, turpis arcu laoreet ligula, pretium interdum ante sapien nec arcu. Pellentesque porttitor quam non dictum volutpat. Praesent rutrum ipsum nec lectus commodo, id interdum turpis auctor. Integer eu neque at tellus tempor molestie.Cras cursus, ex a rutrum consectetur, metus tortor vulputate lacus, nec finibus enim odio vel ex. Maecenas lacinia rutrum nunc, sed auctor felis tristique vel. Nunc vel purus sed sapien sollicitudin rutrum vitae nec ligula. Aenean quis lorem turpis. Nulla tempor justo turpis, in hendrerit elit porta eget. Etiam tincidunt mi vel justo aliquam, vel pretium risus blandit. Quisque blandit maximus velit, varius dictum nisi auctor vitae. Nunc cursus diam mauris, ut convallis tellus pharetra ut. Etiam ac eros leo. Sed vel vehicula nisl. Integer vulputate, risus ac volutpat cursus, dolor nibh porta nisl, vitae posuere lectus massa ac lacus. Phasellus lobortis arcu justo, tincidunt dignissim velit laoreet efficitur. Aenean nec dolor eu ligula maximus consectetur. Fusce vestibulum elit vel lectus aliquet, venenatis volutpat erat ultrices. Sed id auctor odio.
                     </p>
-                </div>
-                <div class="authorDescr Lomonosov">
+                    </div>
+                    <div class="authorDescr Lomonosov">
                     <h1>Александр Иванович Карамзин4</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie maximus diam, quis rhoncus urna elementum et. Proin sed auctor nisl, vel lacinia quam. Aliquam mollis, magna vitae tempor pretium, magna mi consectetur metus, at tristique enim massa non ex. Aenean sed tortor dictum ex lobortis fringilla. Suspendisse ac erat porta, hendrerit quam sit amet, blandit diam. Aliquam in turpis consectetur, feugiat libero in, fringilla neque. Pellentesque eu magna semper, tempor metus in, aliquam dui. Ut tellus metus, sagittis a odio hendrerit, aliquam volutpat est. Aliquam quis dolor viverra, aliquet lectus sed, efficitur neque. Morbi tincidunt justo vel mi sollicitudin vestibulum. Etiam mattis velit risus, quis porttitor diam rhoncus a. Curabitur volutpat, erat ac iaculis malesuada, turpis arcu laoreet ligula, pretium interdum ante sapien nec arcu. Pellentesque porttitor quam non dictum volutpat. Praesent rutrum ipsum nec lectus commodo, id interdum turpis auctor. Integer eu neque at tellus tempor molestie.Cras cursus, ex a rutrum consectetur, metus tortor vulputate lacus, nec finibus enim odio vel ex. Maecenas lacinia rutrum nunc, sed auctor felis tristique vel. Nunc vel purus sed sapien sollicitudin rutrum vitae nec ligula. Aenean quis lorem turpis. Nulla tempor justo turpis, in hendrerit elit porta eget. Etiam tincidunt mi vel justo aliquam, vel pretium risus blandit. Quisque blandit maximus velit, varius dictum nisi auctor vitae. Nunc cursus diam mauris, ut convallis tellus pharetra ut. Etiam ac eros leo. Sed vel vehicula nisl. Integer vulputate, risus ac volutpat cursus, dolor nibh porta nisl, vitae posuere lectus massa ac lacus. Phasellus lobortis arcu justo, tincidunt dignissim velit laoreet efficitur. Aenean nec dolor eu ligula maximus consectetur. Fusce vestibulum elit vel lectus aliquet, venenatis volutpat erat ultrices. Sed id auctor odio.
                     </p>
-                </div>
-                <div class="authorDescr Tolstoy">
+                    </div>
+                    <div class="authorDescr Tolstoy">
                     <h1>Александр Иванович Карамзин5</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie maximus diam, quis rhoncus urna elementum et. Proin sed auctor nisl, vel lacinia quam. Aliquam mollis, magna vitae tempor pretium, magna mi consectetur metus, at tristique enim massa non ex. Aenean sed tortor dictum ex lobortis fringilla. Suspendisse ac erat porta, hendrerit quam sit amet, blandit diam. Aliquam in turpis consectetur, feugiat libero in, fringilla neque. Pellentesque eu magna semper, tempor metus in, aliquam dui. Ut tellus metus, sagittis a odio hendrerit, aliquam volutpat est. Aliquam quis dolor viverra, aliquet lectus sed, efficitur neque. Morbi tincidunt justo vel mi sollicitudin vestibulum. Etiam mattis velit risus, quis porttitor diam rhoncus a. Curabitur volutpat, erat ac iaculis malesuada, turpis arcu laoreet ligula, pretium interdum ante sapien nec arcu. Pellentesque porttitor quam non dictum volutpat. Praesent rutrum ipsum nec lectus commodo, id interdum turpis auctor. Integer eu neque at tellus tempor molestie.Cras cursus, ex a rutrum consectetur, metus tortor vulputate lacus, nec finibus enim odio vel ex. Maecenas lacinia rutrum nunc, sed auctor felis tristique vel. Nunc vel purus sed sapien sollicitudin rutrum vitae nec ligula. Aenean quis lorem turpis. Nulla tempor justo turpis, in hendrerit elit porta eget. Etiam tincidunt mi vel justo aliquam, vel pretium risus blandit. Quisque blandit maximus velit, varius dictum nisi auctor vitae. Nunc cursus diam mauris, ut convallis tellus pharetra ut. Etiam ac eros leo. Sed vel vehicula nisl. Integer vulputate, risus ac volutpat cursus, dolor nibh porta nisl, vitae posuere lectus massa ac lacus. Phasellus lobortis arcu justo, tincidunt dignissim velit laoreet efficitur. Aenean nec dolor eu ligula maximus consectetur. Fusce vestibulum elit vel lectus aliquet, venenatis volutpat erat ultrices. Sed id auctor odio.
                     </p>
-                </div>
-                <div class="authorDescr Turgenev">
+                    </div>
+                    <div class="authorDescr Turgenev">
                     <h1>Александр Иванович Карамзин6</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie maximus diam, quis rhoncus urna elementum et. Proin sed auctor nisl, vel lacinia quam. Aliquam mollis, magna vitae tempor pretium, magna mi consectetur metus, at tristique enim massa non ex. Aenean sed tortor dictum ex lobortis fringilla. Suspendisse ac erat porta, hendrerit quam sit amet, blandit diam. Aliquam in turpis consectetur, feugiat libero in, fringilla neque. Pellentesque eu magna semper, tempor metus in, aliquam dui. Ut tellus metus, sagittis a odio hendrerit, aliquam volutpat est. Aliquam quis dolor viverra, aliquet lectus sed, efficitur neque. Morbi tincidunt justo vel mi sollicitudin vestibulum. Etiam mattis velit risus, quis porttitor diam rhoncus a. Curabitur volutpat, erat ac iaculis malesuada, turpis arcu laoreet ligula, pretium interdum ante sapien nec arcu. Pellentesque porttitor quam non dictum volutpat. Praesent rutrum ipsum nec lectus commodo, id interdum turpis auctor. Integer eu neque at tellus tempor molestie.Cras cursus, ex a rutrum consectetur, metus tortor vulputate lacus, nec finibus enim odio vel ex. Maecenas lacinia rutrum nunc, sed auctor felis tristique vel. Nunc vel purus sed sapien sollicitudin rutrum vitae nec ligula. Aenean quis lorem turpis. Nulla tempor justo turpis, in hendrerit elit porta eget. Etiam tincidunt mi vel justo aliquam, vel pretium risus blandit. Quisque blandit maximus velit, varius dictum nisi auctor vitae. Nunc cursus diam mauris, ut convallis tellus pharetra ut. Etiam ac eros leo. Sed vel vehicula nisl. Integer vulputate, risus ac volutpat cursus, dolor nibh porta nisl, vitae posuere lectus massa ac lacus. Phasellus lobortis arcu justo, tincidunt dignissim velit laoreet efficitur. Aenean nec dolor eu ligula maximus consectetur. Fusce vestibulum elit vel lectus aliquet, venenatis volutpat erat ultrices. Sed id auctor odio.
                     </p>
-                </div>
-                <div class="authorDesc Tutchev">
+                    </div>
+                    <div class="authorDesc Tutchev">
                     <h1>Александр Иванович Карамзин7</h1>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi molestie maximus diam, quis rhoncus urna elementum et. Proin sed auctor nisl, vel lacinia quam. Aliquam mollis, magna vitae tempor pretium, magna mi consectetur metus, at tristique enim massa non ex. Aenean sed tortor dictum ex lobortis fringilla. Suspendisse ac erat porta, hendrerit quam sit amet, blandit diam. Aliquam in turpis consectetur, feugiat libero in, fringilla neque. Pellentesque eu magna semper, tempor metus in, aliquam dui. Ut tellus metus, sagittis a odio hendrerit, aliquam volutpat est. Aliquam quis dolor viverra, aliquet lectus sed, efficitur neque. Morbi tincidunt justo vel mi sollicitudin vestibulum. Etiam mattis velit risus, quis porttitor diam rhoncus a. Curabitur volutpat, erat ac iaculis malesuada, turpis arcu laoreet ligula, pretium interdum ante sapien nec arcu. Pellentesque porttitor quam non dictum volutpat. Praesent rutrum ipsum nec lectus commodo, id interdum turpis auctor. Integer eu neque at tellus tempor molestie.Cras cursus, ex a rutrum consectetur, metus tortor vulputate lacus, nec finibus enim odio vel ex. Maecenas lacinia rutrum nunc, sed auctor felis tristique vel. Nunc vel purus sed sapien sollicitudin rutrum vitae nec ligula. Aenean quis lorem turpis. Nulla tempor justo turpis, in hendrerit elit porta eget. Etiam tincidunt mi vel justo aliquam, vel pretium risus blandit. Quisque blandit maximus velit, varius dictum nisi auctor vitae. Nunc cursus diam mauris, ut convallis tellus pharetra ut. Etiam ac eros leo. Sed vel vehicula nisl. Integer vulputate, risus ac volutpat cursus, dolor nibh porta nisl, vitae posuere lectus massa ac lacus. Phasellus lobortis arcu justo, tincidunt dignissim velit laoreet efficitur. Aenean nec dolor eu ligula maximus consectetur. Fusce vestibulum elit vel lectus aliquet, venenatis volutpat erat ultrices. Sed id auctor odio.
                     </p>
+                    </div>
+                    <div class="menuBar">
+                    <img src="img/menu.png" alt="" id="menuBar">
+                    </div>
                 </div>
-                <div class="menuBar">
-                <img src="img/menu.png" alt="" id="menuBar">
-                </div>
-             </div>
-            </div>
         </div>
         <script>
             var autMaps = ["#KuprinMap", "#GogolMap", "#GoncharovMap", "#DostoevskiMap", "#KaramzinMap", "LomonosovMap", "TolstoyMap", "#TurgenevMap", "TutchevMap"];
