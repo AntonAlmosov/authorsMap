@@ -119,7 +119,7 @@
                 </div>
         </div>
         <script>
-            var autMaps = ["#KuprinMap", "#GogolMap", "#GoncharovMap", "#DostoevskiMap", "#KaramzinMap", "LomonosovMap", "TolstoyMap", "#TurgenevMap", "TutchevMap"];
+            var autMaps = [".Kuprin", ".Gogol", ".Goncharov", ".Dostoevski", ".Karamzin", ".Lomonosov", ".Tolstoy", ".Turgenev", ".Tutchev"];
                 $("#menuBar").click(function(){
                     $(".authorScreen").hide("fast");
                     $(".menuOpened").show("fast");
@@ -128,29 +128,23 @@
                     $(".menuOpened").hide("fast");
                     $(".authorScreen").show("fast");
                 });
-                $("#KuprinTab").click(function(){
-                    $(".menuOpened").hide("fast");
-                    $(".authorScreen").show("fast");
-                    jQuery.each(autMaps, function(){
-                        $(this).hide();
-                    });
-                    $("#Kuprin").show();
-                });
                 $("#GogolTab").click(function(){
                     $(".menuOpened").hide("fast");
                     $(".authorScreen").show("fast");
-                    $(".authorDesr:visible").hide();
+                    $("div.authorDesr>div:visible").hide();
                     $(".Gogol").show();
-                    var atMap = L.map('authorMap').setView([ 48.107, 16.997], 3.9);
-                            L.tileLayer('https://api.mapbox.com/styles/v1/rolanlive/cj0cqb45k00b92smqdxfz09g3/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q').redraw().addTo(atMap);
                 });
                 $("#GoncharovTab").click(function(){
                     $(".menuOpened").hide("fast");
                     $(".authorScreen").show("fast");
-                    $(".authorDesr:visible").hide();
+                    $(".authorDesr>div:visible").hide();
                     $(".Goncharov").show();
-                    var atMap = L.map('authorMap').setView([ 34.472, 54.460], 2.33);
-                            L.tileLayer('https://api.mapbox.com/styles/v1/rolanlive/cj0cq6u9a00bj2sqpvwpt0lwl/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q').addTo(atMap);
+                });
+                $("#DostoevskiTab").click(function(){
+                    $(".menuOpened").hide("fast");
+                    $(".authorScreen").show("fast");
+                    $(".authorDesr>div:visible").hide();
+                    $(".Dostoevski").show();
                 });
         </script>
     </body>
