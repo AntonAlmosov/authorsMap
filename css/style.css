@@ -31,6 +31,9 @@ h2 {
 .mapScreen{
     position: relative;
 }
+.menuScreen{
+    position: relative;
+}
 .menuOpened{
     height: 100%;
     width: 230px;
@@ -102,9 +105,15 @@ h2 {
     height: 500px;
     margin-left: 230px;
     position: fixed;
+    z-index: 1;
 }
 .placeHolder{
     text-align: center;
+    width: 754px;
+    height: 500px;
+    margin-left: 230px;
+    position: fixed;
+    background-color: rgba(244,244,244, 1);
 }
 .Kuprin{
     display: none;

@@ -10,47 +10,49 @@
     <body>
         <div class="main">
                 <div class="mapScreen">
+                    <div class="placeHolder">
+                        <h1>Выберите писателя</h1>
+                    </div>
                     <div id="authorMap">
-                        <script>
-                            
-                        </script>
                     </div>
                 </div>
-                <div class="menuOpened">
-                    <div class="authorTab" id="GogolTab">
+                <div class="menuScreen">
+                    <div class="menuOpened">
+                        <div class="authorTab" id="GogolTab">
                         <img src="img/gogol.png" alt="">
                         <h2>Николай Васильевич Гоголь</h2>
-                    </div>
-                    <div class="authorTab" id="GoncharovTab">
+                        </div>
+                        <div class="authorTab" id="GoncharovTab">
                         <img src="img/goncharov.png" alt="">
                         <h2>Иван Александрович Гончаров</h2>
-                    </div>
-                    <div class="authorTab" id="DostoevskiTab">
+                        </div>
+                        <div class="authorTab" id="DostoevskiTab">
                         <img src="img/dostoevsky.png" alt="">
                         <h2>Достоевский, Фёдор Михайлович</h2>
-                    </div>
-                    <div class="authorTab" id="KaramzinTab">
+                        </div>
+                        <div class="authorTab" id="KaramzinTab">
                         <img src="img/karamzin.png" alt="">
                         <h2>Николай Михайлович Карамзин</h2>
-                    </div>                                        <div class="authorTab" id="KuprinTab">
+                        </div>                                        <div class="authorTab" id="KuprinTab">
                         <img src="img/getzen.png" alt="">
                         <h2>Александр Иванович Куприн</h2>
-                    </div>
-                    <div class="authorTab" id="LomonosovTab">
+                        </div>
+                        <div class="authorTab" id="LomonosovTab">
                         <img src="img/lomonosov.png" alt="">
                         <h2>Михаил Васильевич Ломоносов</h2>
-                    </div>
-                    <div class="authorTab" id="TolstoyTab">
+                        </div>
+                        <div class="authorTab" id="TolstoyTab">
                         <img src="img/tolstoy.png" alt="">
                         <h2>Лев Николаевич Толстой</h2>
-                    </div>
-                    <div class="authorTab" id="TurgenevTab">
+                        </div>
+                        <div class="authorTab" id="TurgenevTab">
                         <img src="img/turgenev.png" alt="">
                         <h2>Иван Сергеевич Тургенев</h2>
-                    </div>
-                    <div class="authorTab" id="TutchevTab">
+                        </div>
+                        <div class="authorTab" id="TutchevTab">
                         <img src="img/tutchev.png" alt="">
                         <h2>Фёдор Иванович Тютчев</h2>
+                        </div>
                     </div>
                     <div class="closeBar">
                     <img src="img/close.png" alt="" id="closeBar">
@@ -138,8 +140,17 @@
                     $(".menuOpened").hide("fast");
                     $(".authorScreen").show("fast");
                     $(".authorDesr:visible").hide();
-                    $("#authorMap:visible").hide();
                     $(".Gogol").show();
+                    var atMap = L.map('authorMap').setView([ 48.107, 16.997], 3.9);
+                            L.tileLayer('https://api.mapbox.com/styles/v1/rolanlive/cj0cqb45k00b92smqdxfz09g3/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q').redraw().addTo(atMap);
+                });
+                $("#GoncharovTab").click(function(){
+                    $(".menuOpened").hide("fast");
+                    $(".authorScreen").show("fast");
+                    $(".authorDesr:visible").hide();
+                    $(".Goncharov").show();
+                    var atMap = L.map('authorMap').setView([ 34.472, 54.460], 2.33);
+                            L.tileLayer('https://api.mapbox.com/styles/v1/rolanlive/cj0cq6u9a00bj2sqpvwpt0lwl/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1Ijoicm9sYW5saXZlIiwiYSI6ImNpdGJ3ZThwNDA4cmkyeGxxeXBzajNqOHoifQ.Z4JeiTprHy7ph_v11qJb6Q').addTo(atMap);
                 });
         </script>
     </body>
